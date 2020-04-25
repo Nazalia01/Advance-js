@@ -1,0 +1,57 @@
+@import url();
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cursive", sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   background-image: 
+    radial-gradient(lightgreen,  rgb(241, 185, 195),rgb(240, 240, 162),lightblue);
+    color:wheat;
+    line-height: 4em;
+}
+.Clock{
+    padding: 3em 1.5em;
+    background-image: linear-gradient(30deg,lightgray, gray,rgb(200, 98, 98), rgb(70, 67, 67) );
+    border-radius: 30% 60% 70% 40% / 70% 40% 50% 30%;
+    animation: bgblob 7s infinite 0.5s;
+}
+.time{
+    font-size: 4em;
+}
+.date{
+    font-size: 3em;
+}
+.time, .date{
+    text-shadow:0 20px 20px black;
+}
+@keyframes bgblob{
+    0%{
+        border-radius: 30% 40% 70% 60% / 70% 30% 50% 30%;
+    }
+    25%{
+        border-radius: 30% 50% 45% 60% / 60% 40% 30% 70%;
+    }
+    50%{
+        border-radius: 64% 43% 68% 63% / 71% 38% 44% 59%;
+    }
+    75%{
+        border-radius: 57% 78% 80% 65% / 62% 47% 38% 71%;
+    }
+    100%{
+        border-radius: 30% 40% 70% 60% / 70% 30% 50% 80%;
+    }
+
+}
